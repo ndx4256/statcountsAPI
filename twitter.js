@@ -2,9 +2,9 @@ const express = require("express");
 const app = express();
 var Twitter = require('twitter');
 var client = new Twitter({
-    consumer_key: 'DAutNIgdWFEp70XGmwMGQHEhi',
-  consumer_secret: '5it5fVO8Cw6ba1aBwJoizRhVegh5vcRW5W8c4zOBE4t1QI15L0',
-  bearer_token: 'AAAAAAAAAAAAAAAAAAAAAO2UFwEAAAAABbDSDR7Aa1qcgNT4GwYcq5CA19o%3DiVnlvKjg0AnNP1nbUkKsmSGjKJoZItpfyyuC7bhdI92AfflBlv'
+    consumer_key: 'lmaoyouthought',
+  consumer_secret: 'lmaoyouthought',
+  bearer_token: 'lmaoyouthought'
   });
 app.get("/twitter/tweet/:id", (req, resp) => {
 client.get(`statuses/show/${req.params.id}`, function(error, tweets, response) {
